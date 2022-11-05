@@ -10,7 +10,7 @@ public class Main {
 
         int year = 2022;
 
-        Human maksim = new Human("Максим",35,"Минск","бренд-менеджер");
+        Human maksim = new Human("Максим",-35,null,"бренд-менеджер");
         //maksim.name = "Максим";
         //maksim.age = 35;
         //maksim.town = "Минск";
@@ -58,7 +58,7 @@ public class Main {
 
     public static void taskCar() {
 
-        car granta = new car("LADA","Granta",2015,"Россия","Желтый",1.7);
+        car granta = new car(null,null,0,null,null,0);
         //granta.brand = "LADA";
         //granta.model = "Granta";
         //granta.productionYear = 2015;
