@@ -3,32 +3,32 @@ public class Main {
         System.out.println();
         taskHuman();
         System.out.println();
-        //taskCar();
+        taskCar();
         System.out.println();
     }
         public static void taskHuman() {
 
         int year = 2022;
 
-        Human maksim = new Human();
-        maksim.name = "Максим";
-        maksim.age = 35;
-        maksim.town = "Минск";
-        maksim.job = "бренд-менеджер";
+        Human maksim = new Human("Максим",35,"Минск","бренд-менеджер");
+        //maksim.name = "Максим";
+        //maksim.age = 35;
+        //maksim.town = "Минск";
+        //maksim.job = "бренд-менеджер";
 
-        Human anya = new Human();
+        Human anya = new Human("Аня",29,"Москва","методист образовательных программ");
         anya.name = "Аня";
         anya.age = 29;
         anya.town = "Москва";
         anya.job = "методист образовательных программ";
 
-        Human katya = new Human();
+        Human katya = new Human("Катя",28,"Калининград","продакт-менеджер");
         katya.name = "Катя";
         katya.age =28;
         katya.town = "Калининград";
         katya.job = "продакт-менеджер";
 
-        Human artem = new Human();
+        Human artem = new Human("Артем",27,"Москва","директор по развитию бизнеса");
         artem.name = "Артем";
         artem.age = 27;
         artem.town = "Москва";
@@ -58,13 +58,13 @@ public class Main {
 
     public static void taskCar() {
 
-        car granta = new car();
-        granta.brand = "LADA";
-        granta.model = "Granta";
-        granta.productionYear = 2015;
-        granta.productionCountry = "Россия";
-        granta.color = "Желтый";
-        granta.engineVolume = 1.7;
+        car granta = new car("LADA","Granta",2015,"Россия","Желтый",1.7);
+        //granta.brand = "LADA";
+        //granta.model = "Granta";
+        //granta.productionYear = 2015;
+        //granta.productionCountry = "Россия";
+        //granta.color = "Желтый";
+        //granta.engineVolume = 1.7;
         System.out.println("Марка автомобиля " + granta.brand +
                 "; Модель " + granta.model +
                 "; Год выпуска " + granta.productionYear +
@@ -73,7 +73,7 @@ public class Main {
                 "; Объем двигатель " + granta.engineVolume);
 
 
-        car audi = new car();
+        car audi = new car("AUDI","A8 50 L TDI quattro",2020,"Германия","Черный",3.0);
         audi.brand = "AUDI";
         audi.model = "A8 50 L TDI quattro";
         audi.productionYear = 2020;
@@ -88,7 +88,7 @@ public class Main {
                 "; Объем двигатель " + audi.engineVolume);
 
 
-        car bmw = new car();
+        car bmw = new car("BMW","Z8",2021,"Германия","Черный",3.0);
         bmw.brand = "BMW";
         bmw.model = "Z8";
         bmw.productionYear = 2021;
@@ -103,7 +103,7 @@ public class Main {
                 "; Объем двигатель " + bmw.engineVolume);
 
 
-        car kia = new car();
+        car kia = new car("Kia","Sportage 4",2018,"Южная Корея","Красный",2.4);
         kia.brand = "Kia";
         kia.model = "Sportage 4";
         kia.productionYear = 2018;
@@ -118,7 +118,7 @@ public class Main {
                 "; Объем двигатель " + kia.engineVolume);
 
 
-        car hyundai = new car();
+        car hyundai = new car("Hyundai","Avante",2016,"Южная Корея","Оранжевый",1.6);
         hyundai.brand = "Hyundai";
         hyundai.model = "Avante";
         hyundai.productionYear = 2016;
